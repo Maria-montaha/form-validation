@@ -39,7 +39,7 @@
             <label for="java">Java</label>
             <input type="checkbox" name="skill[]" id="node" value="node">
             <label for="node">Node</label>
-            <span>@error('skill'){{$message}}@enderror</span>
+            {{-- <span>@error('skill'){{$message}}@enderror</span> --}}
         </div>
         <div>
             <h4>User Gender</h4>

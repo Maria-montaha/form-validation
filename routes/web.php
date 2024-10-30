@@ -8,8 +8,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('user-form',"user-form");
+// Route::view('user-form',"user-form");
+Route::view('addUser',"user-form");
 Route::post('addUser',[FormController::class,'addUser']);
+
+Route::get('listUser',[FormController::class,'listUser']);
+Route::get('delete/{id}',[FormController::class,'delete']);
+Route::get('edit/{id}',[FormController::class,'edit']);
+Route::put("update/{id}", [FormController::class, 'update']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
